@@ -1,0 +1,49 @@
+.bg-image{
+    background-image: url("../image/sky.jpg");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.sun{
+    position: absolute;
+    width: 400px;
+    animation: sunanimation 5s linear infinite;
+    
+}
+.moon{
+    position: absolute;
+    width: 150px;
+    left: 550px;
+    animation: moonanimation 5s linear infinite;
+ 
+}
+.earth{
+    position: absolute;
+    width: 200px;
+    left: 900px;
+    animation: earthanimation 5s linear infinite;
+}
+ @keyframes moonanimation   {
+        0% {top:30px;}
+        25% {top: 160px;}
+        50% {top: 190px;}
+        75% {top: 260px;}
+        100% {top: 410px;}
+ }
+ @keyframes earthanimation {
+    0% {top:50px;}
+    25% {top: 150px;}
+    50% {top: 200px;}
+    75% {top: 300px;}
+    100% {top: 420px;}
+ }
+ @keyframes sunanimation {
+    0% {top:50px;}
+    25% {top: 55px;}
+    50% {top: 60px;}
+    75% {top: 70px;}
+    100% {top: 90px;}
+ }
